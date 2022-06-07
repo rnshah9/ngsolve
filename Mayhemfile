@@ -1,0 +1,10 @@
+project: ngsolve
+target: ngsolve
+image: ghcr.io/rnshah9/playground:ngsolve
+testsuite:
+  - file://pde_tutorial/d1_square.pde
+
+cmds:
+  - cmd: /repo/build/ngsolve/solve/ngs @@
+    env:
+      DISABLE_SMOKETEST: '1'
